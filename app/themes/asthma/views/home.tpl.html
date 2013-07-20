@@ -1,0 +1,8 @@
+<input type="text" ng-model="newChild.name" />
+<input type="text" ng-model="newChild.id" />
+<h1 ng-click="addChild()">Add Child</h1>
+<ul id="children" ng-show="children">
+	<li ng-repeat="child in children">
+		<div ng-click="$navigate.go('/child/' + child.id)"> {{ child.name }} <small> {{ child.id }} </small></div>
+	</li>
+</ul>

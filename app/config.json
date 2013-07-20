@@ -1,0 +1,11 @@
+{
+	"name" : "",
+	"server_url" : "https://sacred-alpha-282.appspot.com/",
+	"server_secret" : "51ea9e852dba7952bb72",
+
+	"theme" : "asthma",
+
+	"plugins" : ["leaflet"],
+
+	"scripts" : ["controllers"]
+}

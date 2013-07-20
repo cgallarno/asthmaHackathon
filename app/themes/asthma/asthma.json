@@ -1,0 +1,24 @@
+{
+	"title" : "Asthma",
+	"author" : "Cameron Gallarno",
+
+	"files" : {
+		"css" : ["css/bootstrap.min", "css/style"],
+		"js" : []
+	},
+
+	"routes" : [
+		{
+			"path" : "/home",
+			"layout" : "layouts/main",
+			"template" : "home",
+			"controller" : "HomeCrtl"
+		},
+		{
+			"path" : "/child/:id",
+			"layout" : "layouts/main",
+			"template" : "child"
+		},
+		{ "otherwise" : "/home" }
+	]
+}
