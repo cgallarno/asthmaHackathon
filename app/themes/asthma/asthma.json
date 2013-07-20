@@ -17,7 +17,13 @@
 		{
 			"path" : "/child/:id",
 			"layout" : "layouts/main",
-			"template" : "child"
+			"template" : "child",
+			"controller" : "childController"
+		},
+		{
+			"path" : "/addChild",
+			"template" : "add-child",
+			"controller" : "HomeCrtl"
 		},
 		{ "otherwise" : "/home" }
 	]

@@ -1,8 +1,10 @@
-<input type="text" ng-model="newChild.name" />
-<input type="text" ng-model="newChild.id" />
-<h1 ng-click="addChild()">Add Child</h1>
-<ul id="children" ng-show="children">
-	<li ng-repeat="child in children">
-		<div ng-click="$navigate.go('/child/' + child.id)"> {{ child.name }} <small> {{ child.id }} </small></div>
-	</li>
-</ul>
+<div id="add-child" ng-click="$navigate.go('/addChild', 'modal')"><img src="images/plusio.png" height="65px" width="65px" alt=""></div>
+<div id="logo"  style="text-align:right"><img src="images/go.png" alt="" width="75px;" style="margin-right:10px;"></div>
+<div id="children-wrapper" scrollable parameters="{{ {} }}">
+	<ul id="children" ng-show="children">
+		<li ng-repeat="child in children" ng-click="$navigate.go('/child/' + child.id)">
+			<img src="images/circle_g.png" width="40px" alt="" class="pull-left" />
+			{{ child.name }} <small>{{ child.id }}</small> <span class="pull-right">{{ child.points }}pts.</span>
+		</li>
+	</ul>
+</div>

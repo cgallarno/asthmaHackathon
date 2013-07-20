@@ -1,0 +1,15 @@
+<div id="back-btn" ng-click="$navigate.go('/home', 'modal', true);"><img src="images/arrow_left.png" width="40px" alt=""></div>
+
+
+	<h1>Connect</h1>
+
+		<div class="alert {{ alert.class }}" ng-show="alert">
+	  <button type="button" class="close" ng-click="alert = false">&times;</button>
+	  <strong>{{ alert.prefix }}</strong> {{ alert.message }}
+	</div>
+
+	<input type="text" ng-model="newChild.id"  id="code" placeholder="Code" />
+	<input type="text" ng-model="newChild.name" id="name" placeholder="name" />
+
+	<div id="addChild" ng-click="addChild()">Add Child</div>
+

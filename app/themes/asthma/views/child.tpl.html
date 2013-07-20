@@ -1,0 +1,25 @@
+<div id="back-btn" ng-click="$navigate.go('/home', 'slide', true);"><img src="images/arrow_left.png" width="40px" alt=""></div>
+
+
+
+
+<input type="text" placeholder="Task Title" ng-model="task.title" id="title" />
+<input type="text" placeholder="Points" ng-model="task.points" id="points" />
+
+<br>
+
+<button ng-click="addTask()" id="add-task">Add Task</button>
+
+
+
+<div id="tasks-container" scrollable parameters="{{ {} }}">
+	<div class="alert {{ alert.class }}" ng-show="alert">
+	  <button type="button" class="close" ng-click="alert = false">&times;</button>
+	  <strong>{{ alert.prefix }}</strong> {{ alert.message }}
+	</div>
+	<ul id="tasks">
+		<li ng-repeat="task in tasks| orderBy:'time':true">
+			<div class="check"><span ng-hide="task.completed" style="opacity: .2;">&#x2713;</span><span ng-show="task.completed">&#x2713;</span></div>{{ task.title}} <span style="font-size:14px;">{{ task.points }}pts</span>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,160 @@
+body{
+	background-color: #fefefe;
+	font-family: "RobotoThin";
+	color: #8AC84A;
+
+}
+
+#children-wrapper{
+	position: absolute!important;
+	top: 65px;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+}
+
+#children{
+	margin:0 50px 0 20px;
+	padding-bottom: 20px;
+}
+
+#children li{
+	font-size: 26px;
+	list-style-type: none;
+	padding: 20px 0;
+	margin: 20px 0;
+}
+
+#children li span{
+	font-size: 22px;
+}
+
+#children li small{
+	font-size: 16px;
+	font-family: arial;
+}
+
+#children li img{
+	margin-top: -12px;
+	
+}
+
+#add-child{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.mb-page{
+	background-color: #fefefe;
+}
+h1{
+	text-align: center!important;
+	margin-top: 30px;
+	font-size: 28px;
+}
+
+#code, #name{
+	border-radius: 0;
+	padding: 10px 0%;
+	border: none;
+	background-color: #fff;
+	font-family: "RobotoThin";
+	font-size: 20px;
+	border-bottom: 5px solid #ddd;
+	position: relative;
+	width: 80%;
+	left: 10%;
+	top: 40px;
+	text-align: center;
+}
+
+#code{
+	font-size: 32px;
+	padding: 20px 0;
+	height: 40px;
+}
+
+#title, #points{
+	border-radius: 0;
+	height: 60px;
+	border: none;
+	background-color: #fff;
+	font-family: "RobotoThin";
+	font-size: 20px;
+	border-bottom: 5px solid #ddd;
+	position: relative;
+	width: 80%;
+	left: 10%;
+	top: 55px;
+	margin: 0; padding:0;
+	text-align: center;
+
+}
+
+#title{
+	width: 60%;
+}
+
+#points{
+	width: 19.6%;
+}
+
+#add-task{
+	width: 80%;
+	position: relative;
+	top: 70px;
+	background-color: #8AC84A;
+	border: none;
+	padding: 15px 0;
+	color: #fff;
+	left: 10%;
+}
+
+#tasks-container{
+	position: absolute!important;
+	top: 220px;
+	left: 10%;
+	right: 10%;
+	bottom: 0;
+}
+
+.check{
+	float:left;
+	width: 40px;
+	height: 40px;
+}
+
+#tasks-container ul{
+	margin: 0;padding: 0;
+	width: 100%;
+}
+
+#tasks-container ul li{
+	width: 100%;
+	list-style-type: none;
+	font-size: 26px;
+	color: #333;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+#addChild{
+	border-radius: 5px;
+	background-color: #8AC84A;
+	color: #eee;
+	padding: 10px;
+	font-size: 22px;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	margin-left: -55px;
+}
+
+#back-btn{
+	position: absolute;
+	top: 13px;
+	left: 10px;
+}
